@@ -1,0 +1,31 @@
+** Measures to make analysis fair (doesn't create or reinforce bias)
+Consider all of the available data
+Identify surrounding factors
+Include self-reported data such as surveys
+Use oversampling effectively. 
+Process of increasing the sample size of nondominant groups in a population.
+Think about fairness from earliest to the end
+
+**Six problem types
+Making predictions
+Categorizing things
+Spotting something unsual
+Identifying themes
+Discovering connections
+Finding Patterns
+
+Type of dashboards for data management
+strategic: long term goals and strategies
+KPIs over year 
+Revenue and customer overview - Q1 
+Revenue, compared to previous year, # of new customers, compared to previous year
+
+operational: short-term performance tracking and intermediate goals
+contain information on a time scale of days, weeks, or months
+customer service team dashboard
+resolutions: first call resolution vs unresolved calls 
+
+analytical: consists of datasets and mathematics used in these sets
+details involved in the usage, analysis and predictions made by data scientists
+financial performance dashboard, return on assets, wrong capital ratio, balance sheet
+
