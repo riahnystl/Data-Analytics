@@ -1,0 +1,101 @@
+echo "# Data-Analytics" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/riahnystl/Data-Analytics.git
+git push -u origin main
+
+
+> Data strategy gives you a high level of path of your goal, and it is not a one-person job. Specific procedures should be in place for data-driven strategy.
+
+> remember data ecosystem & data visualization
+SELECT *
+**FROM movie_data.movies
+**WHERE Genre_1 = 'Action'
+>Basic Query in SQL Select, From and Where
+> A data analyst uses a SQL query to retrieve information from a database.
+> Syntax of every SQL
+> Use SELECT to choose the columns you want to return.
+> Use FROM to choose the tables where the columns you want are located.
+> Use WHERE to filter for certain information.
+
+SELECT first_name >columns from which to retrieve data
+FROM customer_data.customer_name
+WHERE first_name = 'Tony'
+SELECT
+ ColumnA,
+ ColumnB,
+ ColumnC
+FROM
+ Table where the data lives
+WHERE
+ Certain condition is met
+ Condition 1
+ AND Condition 2
+ And Condition 3
+SELECT
+ customer_id,
+ first_name,
+ last_name,
+FROM
+ customer_data.customer_name
+WHERE
+ customer_id > 0
+ AND first_name = 'Tony'
+ AND last_name = 'Magnolia'
+
+**Capitalization, indentation and semicolons
+SELECT field1
+FROM table
+WHERE field1 = condition;
+> If looking for customers with a last name begins with letter "Ch"
+WHERE field1 LIKE 'Ch%'
+
+**SELECT all columns
+SELECT field1 /*thisis the last name column */
+/*SELECT
+	*
+FROM
+	Employee
+WHERE
+  jobCode = 'SFI'*/
+FROM table --this is the customer data table
+WHERE field1 LIKE 'Ch%';
+
+-- This is an important query used later to join with the accounts table 
+SELECT
+ 		rowkey,  -- key used to join with account_id
+Info.date,  -- date is in string format YYYY-MM-DD HH:MM:SS
+Info.code  -- e.g., 'pub-###'
+
+FROM  Publishers
+
+
+-- Pull basic information from the customer table
+SELECT
+	customer_id, --main ID used to join with customer_addresss
+	first_name, --customer's first name from loyalty program
+	last_name --customer's last name
+FROM
+	customer_data.customer_name
+** Aliases
+field1 AS last_name -- Alias to make my work easier
+table AS customers -- Alias to make my work easier
+
+SELECT
+	last_name 
+FROM
+	customers  
+WHERE
+	last_name LIKE 'Ch%';
+
+** <> does not equal
+
+SELECT
+	*
+FROM
+	Employee
+WHERE
+	jobCode <> 'INT' 
+      AND salary <= 30000;
