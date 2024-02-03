@@ -34,3 +34,10 @@ analytical: consists of datasets and mathematics used in these sets
 details involved in the usage, analysis and predictions made by data scientists
 financial performance dashboard, return on assets, wrong capital ratio, balance sheet
 
+Good vs Bad Data 
+Reliable - accurate, complete and unbiased
+Original - locate original data source 
+Comprehensive - important information unmissing to answer the question or find solution
+Current - refresh data regularly with current info available and relevant. (data.gov, US Census Bureau)
+Cited cited or vetted MUST
+
