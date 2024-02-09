@@ -1,0 +1,62 @@
+SELECT 
+ **name 
+ **city
+FROM
+ 'personal project name.customer_data.customer_address'
+/* when the new customer is added */
+INSERT INTO personal project name.customer_data.customer_address'
+ (customer_id, name, address, city, state, zipcode, country)
+VALUES
+ (2645, 'Rachel DaSandos', '333 SQL Road', 'Jackson'. 'MI', '9202','US')
+/* when we are making updates on the customer information */
+UPDATE  'personal project name.customer_data.customer_address'
+SET address = '123 New Address'
+WHERE customer_id = 2645 
+/*if only using total number of customers then csv file format is not needed 
+week track weekiend promotion of stores, data as csv to visualize as spreadsheet
+if we want to pull trend on a regular basis regular refresh query when written SQL is ideal */
+Create table if not exists
+/* when there are tables for housekeeping */ 
+Drop table if exists
+/*cleaning data including DISTINCT in your SELECT statement removes duplications */
+For example, we want to get customer Ids of customers who live in Ohio 
+
+SELECT
+  DISTINCT customer_id
+FROM
+  'customer_data.customer_addresss'
+/* DISTINCT function unique customer id*/
+/* text strings a group of characters within a cell, need to be cleaned before you can analyze */
+/*LENGTH function to double check string variables are consistent same as LEN */
+SELECT 
+  LENGTH(country) /*column we want to check*/ AS letters_in_country
+FROM
+  'customer_data.customer_address'
+/*query for checking data consistence which are incorrectly listed */
+SELECT
+  country
+FROM
+  'customer_data.customer_address'
+WHERE
+  Length(country)
+
+SELECT 
+ DISTINCT customer_id /*to remove duplicates*/
+FROM
+  'customer_data.customer_address'
+WHERE
+  SUBSTR(country, 1,2) = 'US' /*first letter of each country to pull 2 letters to US only
+
+SELECT 
+  state
+FROM
+  'customer_data.customer_address'
+WHERE 
+  LENGTH(state) > 2 /*states that have more than 2 letter to see incorrect list */ 
+/*TRIM function removes any spaces*/
+SELECT
+  DISTINCT customer_id
+FROM
+  'customer_data.customer_address'
+WHERE
+  TRIM(state)='OH
