@@ -60,3 +60,63 @@ FROM
   'customer_data.customer_address'
 WHERE
   TRIM(state)='OH
+/* Inspect length of the column if there is a maximum of 70 */
+SELECT  
+  DISTINCT fuel_type
+FROM `sql-workspace-413616.cars.car_info` LIMIT 1000
+SELECT
+  MIN(length) AS min_length,
+  MAX(length) AS max_length
+FROM
+  you project name.cars.car_info
+WHERE
+ compression_ratio <> 70;
+/*if you were to dete those that did not return correct 70 value to count how many */
+SELECT
+ COUNT(*) AS num_of_rows_to_delete
+FROM
+ your project name.cars.car_info
+WHERE
+ compression_ratio = 70
+/*to delete the know with wrong value */
+DELETE your project name.cars.car_info
+WHERE compression_ratio = 70;
+
+/* check your data for null or missing values */
+SELECT  
+*
+FROM `sql-workspace-413616.cars.car_info` 
+WHERE
+  num_of_doors IS NULL;
+/* To fill in missing values */
+UPDATE
+  your project name.cars.car_info
+SET
+  num_of_doors = "four"
+WHERE
+  make = "dodge"
+  AND fuel_type = "gas"
+  AND body_style = "sedan";
+/* Identify potential errors */
+SELECT
+  DISTINCT num_of_cylinders
+FROM
+  your project name.cars.car_info;
+/* to correct the misspelling for all rows */
+UPDATE
+  your project name.cars.car_info
+SET
+  num_of_cylinders = "two"
+WHERE
+  num_of_cylinders = "tow";
+/* duplicate values*/
+SELECT
+  DISTINCT drive_wheels,
+  LENGTH(drive_wheels) AS string_length
+FROM
+  your project name.cars.car_info;
+UPDATE
+  your project name.cars.car_info
+SET
+  drive_wheels = TRIM(drive_wheels)
+WHERE TRUE;
