@@ -1,4 +1,4 @@
-SELECT 
+SELECT <br/>
  **name 
  **city
 FROM
