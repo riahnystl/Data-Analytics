@@ -3,7 +3,7 @@ SELECT
  **city
 FROM
  'personal project name.customer_data.customer_address'
-/* when the new customer is added */
+### when the new customer is added 
 INSERT INTO personal project name.customer_data.customer_address'
  (customer_id, name, address, city, state, zipcode, country)
 VALUES
